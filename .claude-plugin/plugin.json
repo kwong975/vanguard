@@ -1,0 +1,31 @@
+{
+  "name": "vanguard",
+  "version": "0.1.0",
+  "description": "A disciplined dev-team loop for Claude Code: four specialized agents audit, critique, build, and QA each change against the real system, with safety guardrail hooks and a project-memory system.",
+  "author": {
+    "name": "Kelly Wong",
+    "email": "kyhwong@gmail.com",
+    "url": "https://github.com/kwong975"
+  },
+  "homepage": "https://github.com/kwong975/vanguard",
+  "repository": "https://github.com/kwong975/vanguard",
+  "license": "MIT",
+  "keywords": [
+    "dev-team",
+    "agents",
+    "code-review",
+    "workflow",
+    "guardrails",
+    "hooks",
+    "memory"
+  ],
+  "hooks": "./hooks/hooks.json",
+  "userConfig": {
+    "memoryDir": {
+      "type": "string",
+      "title": "Memory directory",
+      "description": "Absolute path to your project-memory directory (holds projects/, identity/, memories/, known-issues/). Leave blank to default to ~/.claude/vanguard-memory.",
+      "required": false
+    }
+  }
+}

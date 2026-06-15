@@ -1,0 +1,15 @@
+# Instance config — each user creates their own
+scripts/config.yaml
+
+# Runtime / build noise
+__pycache__/
+*.pyc
+node_modules/
+*.db
+*.db-shm
+*.db-wal
+.DS_Store
+*.swp
+.venv/
+dist/
+build/

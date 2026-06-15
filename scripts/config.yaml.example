@@ -1,0 +1,21 @@
+# claude-harness instance config (copy to config.yaml — git-ignored).
+#
+# This is INSTANCE config, not framework. It records where YOUR artifacts live
+# so the /devteam skill does not have to guess a path. Nothing here is hardcoded
+# into the agents or the helper — every path the loop uses is passed explicitly.
+# The helper (devteam.py) takes all paths as CLI parameters; this file just gives
+# the skill sane defaults to read.
+
+# Where your repos live (the skill defaults Forge's target repo to the repo the
+# conversation is in; this is only a fallback root).
+dev_root: "~/dev"
+
+# Where project files live — the one file per piece of work that holds the
+# tracker, the run log, and the Decision Log (spec: one file by default).
+# Point this at any directory you own: a notes folder, a docs folder, anywhere.
+# The default project file is <workspace>/<slug>.md.
+workspace: "~/notes/projects"
+
+# Optional: where the transient slice-state JSON is written, so a /devteam run
+# survives across sessions. Defaults to alongside the project file if unset.
+# state_dir: "~/notes/projects/.devteam-state"

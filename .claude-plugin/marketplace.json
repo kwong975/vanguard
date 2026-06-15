@@ -1,0 +1,24 @@
+{
+  "name": "vanguard",
+  "owner": {
+    "name": "Kelly Wong",
+    "email": "kyhwong@gmail.com"
+  },
+  "description": "Vanguard — a disciplined dev-team loop, guardrail hooks, and project memory for Claude Code.",
+  "plugins": [
+    {
+      "name": "vanguard",
+      "source": "./",
+      "description": "Four agents audit, critique, build, and QA each change against the real system; safety guardrail hooks; a project-memory system.",
+      "license": "MIT",
+      "keywords": [
+        "dev-team",
+        "agents",
+        "code-review",
+        "workflow",
+        "guardrails",
+        "memory"
+      ]
+    }
+  ]
+}
